@@ -22,7 +22,7 @@ int main() {
 
     uri_builder builder(U("/weather"));
     builder.append_query(U("q"), utility::conversions::to_string_t(city));
-    builder.append_query(U("appid"), U("c60bafa65bc5a113f8d88be1610b434e")); // Replace with your real API key
+    builder.append_query(U("appid"), U("API  KEY")); // Replace with your real API key
 
     http_request request(methods::GET);
     request.set_request_uri(builder.to_string());
